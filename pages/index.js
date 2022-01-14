@@ -1,4 +1,6 @@
 import { Fragment, useState, useRef } from "react";
+import Head from "next/head";
+
 import { Dialog, Popover, Transition } from "@headlessui/react";
 import {
   MenuIcon,
@@ -122,6 +124,10 @@ export default function Example() {
 
   return (
     <>
+      <Head>
+        <title>Dummy tailwind page</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <div className="bg-indigo-600">
         <div className="max-w-7xl mx-auto py-3 px-3 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between flex-wrap">
